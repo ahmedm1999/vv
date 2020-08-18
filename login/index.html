@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login to MyCare.</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="style-login.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><strong>MyCare.</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+	<div class="container main-con">
+		<!-- Modal -->
+<div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <!--Content-->
+    <div class="modal-content form-elegant">
+      <!--Header-->
+      <div class="modal-header text-center mb-3">
+        <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Login to MyCare.</strong></h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body mx-4">
+        <!--Body-->
+        <div class="md-form mb-3">
+          
+          <label data-error="wrong" data-success="left" for="email-add">Email Address</label>
+          <input type="email" id="email-add" class="form-control">
+        </div>
+
+        <div class="md-form mb-3">
+          
+          <label data-error="wrong" data-success="right" for="user-name">User Name</label>
+          <input type="text" id="user-name" class="form-control validate">
+        </div>
+
+        <div class="md-form pb-3">
+          
+          <label data-error="wrong" data-success="right" for="pass">Your password</label>
+          <input type="password" id="pass" class="form-control validate">
+          <small class="d-flex justify-content-center">Forgot <a href="#" class="ml-1" style="color: darkred">
+              Password?</a></small>
+        </div>
+
+        <div class="text-center mb-3">
+          <button class="reg-btn">Login</button><br/>
+        </div>
+        <hr style="width:50%;">
+        <h3 class="text-center" style="color: darkred ; font-size: 15px ;">OR<br/><span style="font-weight: lighter; font-size: 20px;color:#092532">Connect with Facebook</span></h3>
+
+        <div class="row my-3 d-flex justify-content-center">
+          <!--Facebook-->
+          <a href="#"><button class="face-btn"><i class="fab fa-facebook-f"></i></button></a><br/>
+        </div>
+      </div>
+      <div class="modal-footer mx-5 pt-3 mb-1">
+        <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="blue-text ml-1" style="color:darkred">
+            Sign Up</a></p>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!-- Modal -->
+
+<div class="take-it">
+  <a href="" class="btn btn-default main-btn" data-aos="fade-up" data-aos-duration="1500" data-toggle="modal" data-target="#elegantModalForm">Login</a><br/>
+    
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	AOS.init();
+	</script>
+</body>
+</html>
